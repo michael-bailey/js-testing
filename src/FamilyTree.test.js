@@ -71,5 +71,8 @@ describe('person tests', () => {
         Shakur.addChild(Carols)
 
         console.log(util.inspect(Aliahna, {depth: 5}))
+
+        expect(Aliahna.parents).toEqual([Trinise, Shakur])
+        expect(Shakur.parents).toEqual([Shontrell, Naor])
     })
 })
